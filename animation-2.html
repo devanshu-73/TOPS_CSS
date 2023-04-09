@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+             /* animation-name: dev;
+            animation-duration:2s;
+            animation-iteration-count:infinite; */
+            position: relative; 
+        }
+
+        .d1-1 {
+            background-color: red;
+            animation-timing-function: ease;
+        }
+
+        .d1-2 {
+            background-color: blue;
+            animation-timing-function: ease-in;
+        }
+
+        .d1-3 {
+            background-color: yellow;
+        }
+        .d1{
+            width: 100%;
+            height: 100px;
+        }
+        .d1:hover .d1-3{
+            animation-name: dev;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            position: relative;
+            background-color: black;
+            animation-timing-function: ease-in-out;
+        }
+
+        .d1-4 {
+            background-color: green;
+            animation-timing-function: ease-out;
+        }
+
+        .d1-5 {
+            background-color: orange;
+            animation-timing-function: linear;
+        }
+
+        @keyframes dev {
+            0% {
+                left: 0%;
+            }
+
+            100%{
+                left: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d1-1"></div>
+    <div class="d1-2"></div>
+    <div class="d1"><div class="d1-3"></div></div>
+    <div class="d1-4"></div>
+    <div class="d1-5"></div>
+</body>
+
+</html>

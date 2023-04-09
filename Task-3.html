@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style-type: none;
+            box-sizing: border-box;
+        }
+
+        body {
+
+            /* background: #03001e; */
+            /* fallback for old browsers */
+            /* background: -webkit-linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e); */
+            /* Chrome 10-25, Safari 5.1-6 */
+            /* background: linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e); */
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            background: #9CECFB;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to left, #0052D4, #65C7F7, #9CECFB);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to left, #0052D4, #65C7F7, #9CECFB);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+        #container {
+            height: 40px;
+            /* border: 2px solid white; */
+            display: flex;
+            margin-top: 20px;
+            /* position: absolute; */
+            /* top: 10px; */
+            justify-content: space-between;
+        }
+
+        .left {
+            width: 13%;
+            /* border: 2px solid black; */
+        }
+
+        .left a {
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            margin-left: 30px;
+        }
+
+        .mid {
+            width: 74%;
+            /* border: 2px solid black; */
+        }
+
+        .right {
+            width: 13%;
+            /* border: 2px solid black; */
+        }
+
+        .right button {
+            border-radius: 16px;
+            margin-left: -13px;
+            padding: 8px;
+            width: 153px;
+            font-size: 16px;
+            box-shadow: 2px 2px 5px black;
+            font-weight: bold;
+            background-color: transparent;
+            color: white;
+            border: 1px solid transparent;
+        }
+
+        .right button:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .mid ul {
+            display: flex;
+            justify-content: end;
+            font-size: 19px;
+            margin-top: 6px;
+        }
+
+        .item a {
+            margin-right: 45px;
+            color: white;
+        }
+
+        .item a:hover {
+            border: 1px solid transparent;
+            border-radius: 30px;
+            text-shadow: 3px 3px 5px black;
+        }
+
+        .inner-dropdown {
+            display: block !important;
+        }
+
+        .drop {
+            color: white;
+            opacity: 0;
+        }
+
+        .inner-dropdown:hover .drop {
+            display: block;
+            opacity: 1;
+            background-color: transparent;
+            color: white;
+
+        }
+
+        .drop a:hover {
+            color: black;
+        }
+
+        .btn {
+            color: white;
+            border: 1px solid transparent;
+            box-shadow: 2px 2px 5px black;
+            background-color: #3498db;
+            margin-left: 91px;
+            padding: 10px;
+            border-radius: 24px;
+            margin-top: 15px;
+            width: 154px;
+        }
+
+        .btn:hover {
+            background-color: white;
+            color: black;
+        }
+
+
+        .btn1 {
+            color: white;
+            box-shadow: 2px 2px 5px black;
+            border: 1px solid transparent;
+            background-color: #3498db;
+            margin-left: 20px;
+            padding: 10px;
+            border-radius: 24px;
+            margin-top: 15px;
+            width: 154px;
+        }
+
+        .btn1:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .main {
+            display: flex;
+        }
+
+        .left1 {
+            color: white;
+            margin-top: 100px;
+            height: 300px;
+            width: 50%;
+            /* border: 2px solid black; */
+        }
+
+        .left1 h1 {
+            font-size: 55px;
+            margin-left: 87px;
+            margin-top: 12px;
+        }
+
+        .left1 h4 {
+            font-size: 20px;
+            margin-left: 95px;
+            margin-top: 3px;
+        }
+
+        .right1 {
+            margin-top: 60px;
+            height: 380px;
+            width: 50%;
+            /* border: 2px solid black; */
+        }
+
+        .right1 img {
+            margin-left: 70px;
+            height: inherit;
+        }
+
+        /* dropdown */
+        .dropbtn {
+            margin-right: 45px;
+            color: white;
+            background-color: transparent;
+            border: none;
+            font-size: 19px;
+        }
+
+        .dropbtn:hover {
+            border: 1px solid transparent;
+            text-shadow: 3px 3px 5px black;
+        }
+        .content {
+            display: none;
+            opacity: 0;
+            /* z-index: 1; */
+            /* position: absolute; */
+        }
+        .content a{
+            display: inline-block;
+        }
+        .dropbtn:hover .content{
+            display: inline-block;
+            opacity: 1;
+            background-color:black;
+            
+        }
+
+
+        /* dropdown */
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="left"><a href="#">ARSHA</a></div>
+        <div class="mid">
+            <ul>
+                <li class="item"><a href="">Home</a> </li>
+                <li class="item"><a href="">About</a> </li>
+                <li class="item"><a href="">Services</a> </li>
+                <li class="item"><a href="">Portfolio</a> </li>
+                <li class="item"><a href="">Team</a> </li>
+                <li class="item ">
+                    <!-- <a href="" class="dropdown">Drop-Down</a> -->
+                    <!-- <ul class="inner-dropdown">
+                        <li class="drop"><a href=""> Front-End </a></li>
+                        <li class="drop"><a href=""> Back-End</a></li>
+                        <li class="drop"><a href=""> Full-Stack </a></li>
+                    </ul> -->
+                    <p class="dropbtn">Drop-Down</p>
+                    <div class="content">
+                        <a href="">Front</a>
+                        <a href="">Back</a>
+                        <a href="">Full Stack</a>
+                    </div>
+                    <!-- <div class="dropdown">
+                        <button class="dropbtn">DropDown</button>
+                        <div class="dropdown-content">
+                            <a href="">Front</a>
+                            <a href="">Back</a>
+                            <a href="">Full Stack</a>
+                        </div>
+                    </div> -->
+                </li>
+                <li class="item flex-item"><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <div class="right"><button type="submit">Get Started</button></div>
+    </div>
+    <div class="main">
+        <div class="left1">
+            <h1>Better Solutions for Your Business</h1>
+            <h4>We are team of talanted designers making websites <br> with Bootstrap</h5>
+                <div>
+                    <button class="btn">Get Started</button>
+                    <button class="btn1">Watch Video</button>
+                </div>
+        </div>
+        <div class="right1">
+            <img src="/bg.png" alt="img">
+        </div>
+    </div>
+</body>
+
+</html>

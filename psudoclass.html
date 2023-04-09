@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psudoclass</title>
+    <style>
+        /* a:link {
+            color: black;
+        }
+        a:visited{
+            color: red;
+        }
+        a:hover{
+            color: yellow;
+        }
+        a:active{
+            color: blue;
+        } */
+        p:first-child {
+            color: blue;
+        }
+
+        p:first-child:hover {
+            color: aqua;
+        }
+
+        p:last-child {
+            color: red;
+        }
+
+        p:nth-child(2) {
+            color: yellow;
+        }
+
+        p:nth-child() {
+            color: green;
+        }
+
+        p {
+            font-size: 50px;
+        }
+
+        input {
+            border: none;
+            box-shadow: 0 0 20px black;
+            border-bottom: 2px dotted blue;
+        }
+
+        input:focus {
+            outline: none;
+            box-shadow: 0 0 20px aqua;
+            border-bottom: 2px dotted black;
+            /* background-color:black;
+            color: white; */
+        }
+
+        input:checked {
+            height: 50px;
+            width: 50px;
+        }
+
+        input[type="number"]:in-range {
+            border: 2px solid green;
+        }
+
+        input[type="number"]:out-of-range {
+            border: 2px solid red;
+        }
+        ::marker{
+            color:red;
+        }
+        div::after{
+            content:"--- frwwe";
+        }
+        div::before{
+            content:"frwwe ----";
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <a href="#">Home</a> -->
+    <!-- <div>
+        <p>grgerg</p>
+        <p>gregerg</p>
+        <p>refr</p>
+        <p>rgfrer</p>
+    </div>
+    <input type="text" name="" id="">
+    <input type="checkbox" name="" id="">
+    <input type="radio" name="" id="">
+    <input type="number" name="" id="" min="0" max="5">
+     -->
+    <ul type="circle">
+        <li>fjvnvjf</li>
+        <li>rvrvrev</li>
+        <li>revrever</li>
+        <li>frrrvv</li>
+    </ul>
+    <div>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem hic unde a ad eligendi fuga ratione quisquam itaque dolor numquam!
+    </div>
+</body>
+
+</html>

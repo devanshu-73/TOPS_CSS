@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav - 2</title>
+    <style>
+        body {
+            background-color: rgb(83, 121, 192);
+        }
+
+        .header {
+            height: 50px;
+            width: 100%;
+            border: 1px solid black;
+            box-shadow: 0 0 20px black;
+            border-radius: 13px;
+            background-color: black;
+        }
+
+        .nav {
+            width: inherit;
+            display: flex;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        /* .dropdown {
+            margin-right: 40px;
+        } */
+        
+        .item {
+            color: black;
+            opacity: 0;
+            width: 70px;
+            text-align: center;
+        }
+
+        .dropdown:hover .item {
+            display: block;
+            opacity: 1;
+        }
+        .item:hover {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <ul class="nav">
+            <li style="margin:0px 50px 0px 50px"><a href="#">HOME</a></li>
+            <li style="margin:0px 50px 0px 50px"><a href="#">ABOUT</a></li>
+            <li style="margin:0px 50px 0px 50px"><a href="#">SERVICES</a>
+                <ul class="dropdown">
+                    <li class="item"><a href="#">ABC</a> </li>
+                    <li class="item"><a href="#">XYZ</a> </li>
+                    <li class="item"><a href="#">PQR</a> </li>
+                </ul>
+            </li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

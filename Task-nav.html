@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-nav</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: skyblue;
+            font-weight: bold;
+        }
+
+        #navbar {
+            width: 600px;
+            height: 50px;
+            background-color: black;
+            display: flex;
+            box-shadow: -4px -4px 7px white;
+            /* margin-left: 190px;
+            margin-top: 20px; */
+            margin: 30px 100px 0px 100px;
+        }
+
+        .nav {
+            height: 30px;
+            width: 100px;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            justify-content: space-between;
+        }
+
+        a {
+            text-decoration: none;
+            color: white
+        }
+        /* select{
+
+            background-color:black;
+            color: rgb(255, 255, 255);
+            /* text-align: center;
+            padding: 10px; */
+            /* font-weight: bold;
+            border-color: black;
+            justify-content: space-between;
+        } */ 
+        li {
+            /* display: none; */
+            /* visibility: hidden; */
+            opacity: 0;
+            transition: 1s;
+            list-style-type: none;
+        }
+        /* ul{
+            width: 0px;
+        } */
+        ul:hover li {
+            display: block;
+            /* visibility: visible; */
+            opacity: 1;
+            background-color: white;
+            color: black;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <div class="nav" style="font-size: x-large; text-align: center"><a href="">Company</a></div>
+        <div class="nav" style="margin-left: 40px;"><a href="">Home </a></div>
+        <div class="nav" style="margin-left: 0px;"><a href="">About</a></div>
+        <div class="nav" style="margin-right: 10px;margin-left: 0px; margin-top:0px;margin-bottom: 70px;">
+                <!-- <select name="sel" id="" title="sel" style="width:90px;">
+                    <option value="" selected disabled>GALLARY</option>
+                    <option value="">ABC</option>
+                    <option value="">OPQ</option>
+                    <option value="">XYZ</option>
+                </select> -->
+                <ul>
+                  Gallary
+                    <li>fvv</li>
+                    <li>rgree</li>
+                    <li>grer</li>
+                </ul>
+            </div>
+        <div class="nav"><a href="">Contact</a></div>
+        <div class="nav"><a href="">Others</a></div>
+    </div>
+</body>
+
+</html>

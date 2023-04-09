@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        body {
+            background-color: rgba(0, 0, 0, 0.884);
+        }
+
+        .main {
+
+
+            margin-left: 160px;
+            margin-top: 20px;
+            background-image: url(/img/bench-cup-facial-expression-374044-1024x683.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 70%;
+            height: 93vh;
+            /* opacity: 0.9; */
+            /* border: 2px solid white; */
+            border-radius: 8px;
+            display: flex;
+            /* flex-direction: column; */
+        }
+
+        .left {
+            position: relative;
+            border-radius: 8px 0px 0px 8px;
+            width: 32%;
+            background-color: #023b6d;
+            height: inherit;
+        }
+
+        .top {
+            height: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .top h1 {
+            color: white;
+        }
+
+        .circle img {
+            /* display: block; */
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 8px solid #2c2f3f;
+            margin-top: -35px;
+        }
+
+        .right {
+
+            /* border: 2px solid black; */
+            width: 75%;
+            height: inherit;
+
+            /* opacity: 0.8; */
+        }
+
+        .menu a {
+            /* border: 1px solid white; */
+            color: white;
+            border-radius: 9px;
+            background-color: transparent;
+        }
+
+        .logo i {
+            margin-top: 9px;
+            padding: 8px;
+        }
+
+        a {
+            color: rgba(201, 185, 185, 0.767);
+        }
+
+        .navbar ul li {
+            font-weight: bold;
+            width: 168px;
+            height: 30px;
+            margin-top: 20px;
+        }
+
+        .navbar ul li:hover {
+            padding-left: 10px;
+            padding-top: 4px;
+            border-radius: 20px;
+            background-color: #2c2f3f54;
+        }
+        
+        .navbar ul li:hover a{
+            font-weight: bolder;
+            background-color: transparent;
+            color: white;
+
+        }
+
+        .navbar ul li a i {
+            margin-right: 15px;
+        }
+
+        .menu a:hover {
+            background-color: white;
+            color: #023b6d;
+        }
+
+        .right h1 {
+            margin-top: 228px;
+            margin-left: 35px;
+            color: white;
+            font-weight: revert;
+            font-size: 35px;
+        }
+
+        .right h1:hover {
+            font-size: 40px;
+
+        }
+
+        .right h3 {
+            margin-left: 40px;
+            color: white;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="left">
+            <div class="top">
+                <div class="circle"> <img src="/img/profile-logo.jpg" alt="Profile-img">
+                </div>
+                <h1>Alex Smith</h1>
+                <div class="menu">
+                    <a href="#" class="logo twitter"><i class="fa-brands fa-twitter"></i></i></a>
+                    <a href="#" class="logo facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="logo instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="logo skype"><i class="fa-brands fa-skype"></i></a>
+                    <a href="#" class="logo linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+                        <li><a href="#"><i class="fa-regular fa-user"></i>About</a></li>
+                        <li><a href="#"><i class="fa-regular fa-file"></i>Resume</a></li>
+                        <li><a href="#"><i class="fa-solid fa-book"></i>Portfolio</a></li>
+                        <li><a href="#"><i class="fa-solid fa-server"></i>Services</a></li>
+                        <li><a href="#"><i class="fa-solid fa-address-book"></i>Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="right">
+            <h1>Dev Chauhan</h1>
+            <h3> I'm Developer</h3>
+        </div>
+    </div>
+
+</body>
+
+</html>
