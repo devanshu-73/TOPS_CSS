@@ -43,7 +43,7 @@ text-align:center;
 <body>
    <p>I Am Internal Css....</p>
 </body>
-</html>
+
 
 ##  (3)  CSS EXTERNAL
     - To use an external style sheet, add a link to it in the <head> section of each HTML page.
