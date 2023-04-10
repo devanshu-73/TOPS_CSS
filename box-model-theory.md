@@ -31,20 +31,20 @@
     <p class="para">I Am Internal Css....</p>
     </body>
 
-## Output :
+## Output
+<head>
+<style> 
+.para{
+font-size:30px;
+color:red;
+text-align:center;
+}
+</style>
+</head>
+<body>
+<p class="para">I Am Internal Css....</p>
+</body>
 
- <head>
-      <style>
-        .para{
-          font-size:30px;
-          color:red;
-          text-align:center;
-         }
-      </style>
-    </head>
-    <body>
-    <p class="para">I Am Internal Css....</p>
-    </body>
 ##  (3)  CSS EXTERNAL
     - To use an external style sheet, add a link to it in the <head> section of each HTML page.
 
@@ -60,12 +60,10 @@
     </body>
     </html>
 
-## Output :
-    
+## Output :    
 <head>
 <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 <h3>   I Am External Css....   </h3>
 </body>
