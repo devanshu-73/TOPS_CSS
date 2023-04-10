@@ -20,7 +20,7 @@
 ### Example :
     <head>
       <style>
-        .para{
+        h1{
           font-size:30px;
           color:red;
           text-align:center;
@@ -28,13 +28,19 @@
       </style>
     </head>
     <body>
-    <p class="para">I Am Internal Css....</p>
+    <h1>I Am Internal Css....</h1>
     </body>
 
 ## Output
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<style> 
-.para{
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+p{
 font-size:30px;
 color:red;
 text-align:center;
@@ -42,8 +48,9 @@ text-align:center;
 </style>
 </head>
 <body>
-<p class="para">I Am Internal Css....</p>
+    <p>I Am Internal Css....</p>
 </body>
+</html>
 
 ##  (3)  CSS EXTERNAL
     - To use an external style sheet, add a link to it in the <head> section of each HTML page.
