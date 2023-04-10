@@ -1,9 +1,11 @@
 # CSS Types :
- - We can add CSS in three approaches: Inline, Internal, and External.
+    - We can add CSS in three approaches: Inline, Internal, and External.
+
 ##  (1)  CSS INLINE
 
     - Inline CSS is the technique to define the single element with 
     the insert style sheets in an HTML document. 
+
 ### Example :
     <h1 style="color:yellow;text-align:center;">I Am Inline Css....</h1>
    
@@ -13,7 +15,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- <title>INLINE CSS</title> -->
+<title>INLINE CSS</title>
 </head>
 <body>
 <h1 style="color:yellow;text-align:center;">I Am Inline Css....</h1>
@@ -27,16 +29,16 @@
 
 ### Example :
     <head>
-    <title>INTERNAL CSS</title>
       <style>
-        .h1{
-            color:red;
-            text-align:center;
-           }
+        p{
+          font-size:30px;
+          color:red;
+          text-align:center;
+         }
       </style>
     </head>
     <body>
-    <h1>I Am Internal Css....</h1>
+    <p>I Am Internal Css....</p>
     </body>
 
 <!DOCTYPE html>
@@ -45,16 +47,17 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- <title>INTERNAL CSS</title> -->
+<title>INTERNAL CSS</title>
 <style>
-.h1{
+p{
+font-size:30px;
 color:red;
 text-align:center;
 }
 </style>
 </head>
 <body>
-   <h1 class="h1">I Am Internal Css....</h1>
+   <p>I Am Internal Css....</p>
 </body>
 </html>
 
@@ -90,11 +93,13 @@ text-align:center;
 
     - The class selector selects HTML elements with a specific class attribute.
     - To select elements with a specific class, write dot (.), followed by the class name.
+
 ### Example :
     .one {
     text-align: center;
     color: blue;
     }
+
 # CSS id:
 
     - The id uses the id attribute of an HTML element to select a specific element.
