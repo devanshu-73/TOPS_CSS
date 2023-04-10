@@ -9,18 +9,8 @@
 ### Example :
     <h1 style="color:yellow;text-align:center;">I Am Inline Css....</h1>
    
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>INLINE CSS</title>
-</head>
-<body>
+## Output :
 <h1 style="color:yellow;text-align:center;">I Am Inline Css....</h1>
-</body>
-</html>
 
 ##  (2)  CSS INTERNAL
 
@@ -41,13 +31,8 @@
     <p>I Am Internal Css....</p>
     </body>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>INTERNAL CSS</title>
+## Output :
+
 <style>
 p{
 font-size:30px;
@@ -55,7 +40,6 @@ color:red;
 text-align:center;
 }
 </style>
-</head>
 <body>
    <p>I Am Internal Css....</p>
 </body>
@@ -75,17 +59,17 @@ text-align:center;
     <h3>I Am External Css....</h3>
     </body>
     </html>
+
+## Output :
     
-<!DOCTYPE html>
-<html lang="en">
 <head>
-<title>EXTERNAL CSS</title>
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 <h3>   I Am External Css....   </h3>
 </body>
-</html>
+
       
 
 
