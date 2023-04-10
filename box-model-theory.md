@@ -9,9 +9,6 @@
 ### Example :
     <h1 style="color:yellow;text-align:center;">I Am Inline Css....</h1>
    
-## Output :
-<h1 style="color:yellow;text-align:center;">I Am Inline Css....</h1>
-
 ##  (2)  CSS INTERNAL
 
     - Internal CSS is used to define a style for a single HTML page.
@@ -31,26 +28,6 @@
     <h1>I Am Internal Css....</h1>
     </body>
 
-## Output
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-p{
-font-size:30px;
-color:red;
-text-align:center;
-}
-</style>
-</head>
-<body>
-<p>I Am Internal Css....</p>
-</body>
-</html>
-
 ##  (3)  CSS EXTERNAL
     - To use an external style sheet, add a link to it in the <head> section of each HTML page.
 
@@ -65,18 +42,7 @@ text-align:center;
     <h3>I Am External Css....</h3>
     </body>
     </html>
-
-## Output :    
-<head>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<h3>   I Am External Css....   </h3>
-</body>
-
-      
-
-
+    
 # CSS class:
 
     - The class selector selects HTML elements with a specific class attribute.
