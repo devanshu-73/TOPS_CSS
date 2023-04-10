@@ -8,10 +8,28 @@
       {
         "ignore": [
           "justify-content: space-evenly",
-          "background-color: #8067739b"
+          "background-color: #8067739b",
+          "position: sticky",
+          "text-decoration-line",
+          "text-decoration-color",
+          "text-decoration-style",
+          "text-decoration-thickness"
         ]
       }
     ],
-    "sri": "off"
+    "sri": "off",
+    "axe/parsing": [
+      "default",
+      {
+        "marquee": "off"
+      }
+    ],
+    "no-inline-styles": "off",
+    "axe/structure": [
+      "default",
+      {
+        "list": "off"
+      }
+    ]
   }
 }
