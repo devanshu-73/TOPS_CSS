@@ -13,7 +13,11 @@
           "text-decoration-line",
           "text-decoration-color",
           "text-decoration-style",
-          "text-decoration-thickness"
+          "text-decoration-thickness",
+          "border-block-end",
+          "border-block-start",
+          "filter",
+          "text-align-last"
         ]
       }
     ],

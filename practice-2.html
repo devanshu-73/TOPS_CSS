@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .main {
+            height: 100vh;
+            width: 100%;
+            background-color: #f4f2e8;
+        }
+
+        .navbar {
+            width: inherit;
+            height: 7vh;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .left {
+            width: 15%;
+            height: inherit;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            /* border: 1px solid red; */
+        }
+
+        .right {
+            /* border: 1px solid yellow; */
+            width: 85%;
+            height: inherit;
+        }
+
+        .right ul {
+            height: inherit;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+
+        .right ul li {
+            margin: 0px 70px;
+        }
+
+
+        /* -----------------------------------sec-1--------------------------------------- */
+
+        .sec-1 {
+            width: 80%;
+            height: 93vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            margin: 0px auto;
+        }
+
+        .left-1 {
+            width: 50%;
+            height: inherit;
+            border: 1px solid yellow;
+        }
+
+        .right-1 {
+            width: 50%;
+            height: inherit;
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid blueviolet;
+        }
+
+        .top-1{
+            position: absolute;
+            top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .top-1 p{
+            width: 90%;
+        }
+        .bottom-1{
+            position: absolute;
+            bottom: 20px;
+            /* border: 1px solid black; */
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="left">
+                <div class="logo">DEVANSHU</div>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>STORE</li>
+                    <li>MATERIALS</li>
+                    <li>ABOUT US</li>
+                    <li>CONTACT</li>
+                </ul>
+            </div>
+        </div>
+        <div class="sec-1">
+            <div class="left-1"> </div>
+            <div class="right-1">
+                <div class="top-1">
+                    <h4>asn rvevv</h4>
+                    <h1>cnnnecon</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, aliquam Lorem ipsum dolor
+                        sit, amet consectetur adipisicing elit. Adipisci at ducimus id ad enim fugiat..</p>
+                        <button class="top-btn">Read more</button>
+                </div>
+                <div class="bottom-1">
+                    <img src="/img/img-2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
