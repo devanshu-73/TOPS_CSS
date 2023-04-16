@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .main {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+        }
+
+        img {
+            border: 1px solid black;
+            height: 190px;
+            margin-right: 2px;
+        }
+
+        @media (min-width:250px) and (max-width:320px) {
+            .main {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        @media (min-width:321px) and (max-width:358px) {
+            .main {
+                display: flex;
+                flex-direction: column;
+            }
+
+            img {
+                border: 1px solid black;
+                height: 200px;
+            }
+
+        }
+        @media (min-width:358px) and (max-width:470px) {
+            .main {
+                display: flex;
+                flex-direction: column;
+            }
+
+            img {
+                border: 1px solid black;
+                height: 290px;
+            }
+
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <img class="img1" src="/img/far_cry_3_video_game-wallpaper-1366x768.jpg" alt="img...">
+        <img class="img2" src="/img/far_cry_4_himalaya-wallpaper-1366x768.jpg" alt="img...">
+        <img class="img3" src="/img/far_cry_primal_4-wallpaper-1366x768.jpg" alt="img...">
+        <img class="img4" src="/img/far_cry_primal_6-wallpaper-1366x768.jpg" alt="img...">
+    </div>
+</body>
+
+</html>
