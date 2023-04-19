@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid class</title>
+    <style>
+        section{
+            display: grid;
+        }
+        .box{
+            background-color:burlywood;
+            color: black;
+            margin: 1rem;
+            text-align: center;
+        }
+        .box:nth-child(1){
+            grid-column: span 12;
+        }
+        .box:nth-child(2),.box:nth-child(3){
+            grid-column: span 6;
+        }
+        .box:nth-child(4),.box:nth-child(5),.box:nth-child(6){
+            grid-column: span 4;
+        }
+        .box:nth-child(7),.box:nth-child(8),.box:nth-child(9),.box:nth-child(10){
+            grid-column: span 3;
+        }
+        .box:nth-child(11),.box:nth-child(12),.box:nth-child(13),.box:nth-child(14),.box:nth-child(15),.box:nth-child(16){
+            grid-column: span 2;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+        <div class="box box-4">4</div>
+        <div class="box box-5">5</div>
+        <div class="box box-6">6</div>
+        <div class="box box-7">7</div>
+        <div class="box box-8">8</div>
+        <div class="box box-9">9</div>
+        <div class="box box-10">10</div>
+        <div class="box box-11">11</div>
+        <div class="box box-12">12</div>
+        <div class="box box-13">13</div>
+        <div class="box box-14">14</div>
+        <div class="box box-15">15</div>
+        <div class="box box-16">16</div>
+        <div class="box box-17">17</div>
+        <div class="box box-18">18</div>
+        <div class="box box-19">19</div>
+        <div class="box box-20">20</div>
+        <div class="box box-21">21</div>
+        <div class="box box-22">22</div>
+        <div class="box box-23">23</div>
+        <div class="box box-24">24</div>
+        <div class="box box-25">25</div>
+        <div class="box box-26">26</div>
+        <div class="box box-27">27</div>
+        <div class="box box-28">28</div>
+    </section>
+</body>
+</html>
