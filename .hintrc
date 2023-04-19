@@ -17,7 +17,14 @@
           "border-block-end",
           "border-block-start",
           "filter",
-          "text-align-last"
+          "text-align-last",
+          "display: grid",
+          "grid-template-columns",
+          "grid-row-start",
+          "grid-row-end",
+          "grid-column-start",
+          "grid-column-end",
+          "grid-template-rows"
         ]
       }
     ],

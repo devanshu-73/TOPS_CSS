@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            display: grid;
+            border: 1px solid black;
+            gap: 10px 10px;
+            grid-template-columns: auto auto auto auto;
+        }
+        .one{
+            padding: 50px;
+            background-color: blue;
+            border: 1px solid royalblue;
+        }
+        #d1{
+            grid-row-start:1 ;
+            grid-row-end:4 ;
+        }
+        #d2{
+            grid-column-start:2 ;
+            grid-column-end:4 ;
+        }
+        #d6{
+            grid-column-start:4 ;
+            grid-row-start:2 ;
+            grid-row-end:4 ;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="one" id="d1">1</div>
+        <div class="one" id="d2">2</div>
+        <div class="one">3</div>
+        <div class="one">4</div>
+        <div class="one">5</div>
+        <div class="one" id="d6">6</div>
+        <div class="one">7</div>
+        <div class="one">8</div>
+    </section>
+</body>
+</html>

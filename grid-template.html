@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Task</title>
+    <style>
+        * {
+            text-align: center;
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        section {
+            border: 1px solid black;
+
+            display: grid;
+            gap: 10px 10px;
+
+            grid-template-columns: auto auto auto auto auto auto;
+            grid-template-rows: auto auto auto auto;
+        }
+
+        .box {
+            padding: 50px;
+            background-color: whitesmoke;
+            border: 1px solid transparent;
+        }
+
+
+        /* ---------------------------------------------------------------------------------------------*/
+
+        /* --------------box-1 start--------------------------------- */
+        .box-1 {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto auto;
+            gap: 1px 1px;
+            padding: 2px;
+            border: 1px solid black;
+            background-color: aqua;
+        }
+
+        .d {
+
+            border: 1px solid black;
+        }
+
+        .a2 {
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+
+        .a3 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .a6 {
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+
+        /* --------------box-1 end--------------------------------- */
+        /* --------------box-2 start--------------------------------- */
+        .box-2 {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto;
+            gap: 1px 1px;
+            padding: 2px;
+            border: 1px solid black;
+            background-color: aqua;
+        }
+
+        .d {
+            border: 1px solid black;
+        }
+
+        .b2 {
+            grid-column-start: 2;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+
+        .b3 {
+            grid-column-start: 3;
+        }
+
+        .b4 {
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+
+        .b5 {
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+
+        .b6 {
+            grid-column-start: 2;
+        }
+
+        /* --------------box-2 end--------------------------------- */
+        /* --------------box-3 start--------------------------------- */
+        .box-3 {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto;
+            gap: 1px 1px;
+            padding: 2px;
+            border: 1px solid black;
+            background-color: aqua;
+        }
+
+        .d {
+            border: 1px solid black;
+        }
+
+        .c1 {
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        /* --------------box-3 end--------------------------------- */
+        /* --------------box-4 start--------------------------------- */
+        .box-4 {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto auto;
+            gap: 1px 1px;
+            padding: 2px;
+            border: 1px solid black;
+            background-color: aqua;
+        }
+
+        .d {
+            border: 1px solid black;
+        }
+
+        .d1 {
+            grid-row-start: 1;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .d2 {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+        }
+
+        .d3 {
+            grid-row-start: 1;
+            grid-column-start: 4;
+            grid-column-end: 6;
+        }
+
+        .d5 {
+            grid-column-start: 5;
+        }
+
+        .d7 {
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 2;
+            grid-column-end: 5;
+        }
+
+        .d8 {
+            grid-column-start: 5;
+        }
+
+        .d9 {
+            grid-row-start: 4;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .d11 {
+            grid-row-start: 4;
+            grid-column-start: 4;
+            grid-column-end: 6;
+        }
+
+
+        /* --------------box-4 end--------------------------------- */
+        /* --------------box-5 start--------------------------------- */
+        .box-5 {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto auto auto;
+            gap: 1px 1px;
+            padding: 2px;
+            border: 1px solid black;
+            background-color: aqua;
+        }
+
+        .d {
+            border: 1px solid black;
+        }
+
+        .e1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+
+        .e2 {
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 3;
+            grid-column-end: 7;
+        }
+
+        .e3 {
+            grid-row-start: 3;
+            grid-row-end: 5;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .e4 {
+            grid-row-start: 3;
+            grid-column-start: 3;
+        }
+
+        .e5 {
+            grid-row-start: 3;
+            grid-column-start: 4;
+        }
+
+        .e6 {
+            grid-row-start: 3;
+            grid-row-end: 5;
+            grid-column-start: 5;
+            grid-column-end: 7;
+        }
+
+        .e7 {
+            grid-row-start: 4;
+            grid-column-start: 3;
+        }
+
+        .e8 {
+            grid-row-start: 4;
+            grid-column-start: 4;
+        }
+
+        .e9 {
+            grid-row-start: 5;
+            grid-row-end: 7;
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+
+        .e10 {
+            grid-column-start: 5;
+            grid-column-end: 7;
+            grid-row-start: 5;
+            grid-row-end: 7;
+        }
+
+        /* --------------box-5 end--------------------------------- */
+        /* --------------box-6 start--------------------------------- */
+        .box-6 {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto;
+            gap: 1px 1px;
+            padding: 2px;
+            border: 1px solid black;
+            background-color: aqua;
+        }
+
+        .d {
+            border: 1px solid black;
+        }
+
+        .f4 {
+            grid-row-start: 2;
+            grid-row-end: 5;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        /* --------------box-6 end--------------------------------- */
+        /* --------------box-7 start--------------------------------- */
+        .box-7 {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: auto auto auto;
+            gap: 1px 1px;
+            padding: 2px;
+            border: 1px solid black;
+            background-color: aqua;
+        }
+
+        .d {
+            border: 1px solid black;
+        }
+
+        .g1 {
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+
+        .g4 {
+            grid-row-start: 3;
+            grid-row-end: 5;
+            grid-column-start: 3;
+        }
+
+        .g5 {
+            grid-row-start: 3;
+            grid-row-end: 5;
+            grid-column-start: 4;
+        }
+
+        .g6 {
+            grid-row-start: 4;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        /* --------------box-7 end--------------------------------- */
+
+
+
+
+        /* --------------box-8 start--------------------------------- */
+        .box-8 {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: auto auto auto;
+            gap: 1px 1px;
+            padding: 2px;
+            border: 1px solid black;
+            background-color: aqua;
+        }
+
+        .d {
+            border: 1px solid black;
+        }
+
+        .h1 {
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        .h2 {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 4;
+        }
+
+        .h6 {
+            grid-row-start: 3;
+            grid-row-end: 5;
+            grid-column-start: 2;
+            grid-column-end: 5;
+        }
+
+        /* --------------box-8 end--------------------------------- */
+
+         /* --------------box-12 start--------------------------------- */
+         .box-12 {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto;
+            gap: 1px 1px;
+            padding: 2px;
+            border: 1px solid black;
+            background-color: aqua;
+        }
+
+        .d {
+            border: 1px solid black;
+        }
+
+        .l4 {
+            grid-row-start: 2;
+            grid-row-end: 5;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        /* --------------box-12 end--------------------------------- */
+        /* --------------box-13 start--------------------------------- */
+        .box-13 {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            grid-template-rows: auto auto;
+            gap: 1px 1px;
+            padding: 2px;
+            border: 1px solid black;
+            background-color: aqua;
+        }
+
+        .d {
+            border: 1px solid black;
+        }
+        .m1{
+            grid-column-start: 1;
+            grid-column-end: 6;
+            grid-row-start: 1;
+            grid-row-end: 5;
+
+        }
+        /* --------------box-13 end--------------------------------- */
+        
+        /* --------------box-14 start--------------------------------- */
+        .box-14 {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            gap: 1px 1px;
+            padding: 2px;
+            border: 1px solid black;
+            background-color: aqua;
+        }
+
+        .d {
+            border: 1px solid black;
+        }
+        /* --------------box-14 end--------------------------------- */
+        /* --------------box-15 start--------------------------------- */
+        .box-15 {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto auto auto auto auto;
+            gap: 1px 1px;
+            padding: 2px;
+            border: 1px solid black;
+            background-color: aqua;
+        }
+
+        .d {
+            border: 1px solid black;
+        }
+        /* --------------box-15 end--------------------------------- */
+        /* --------------box-18 start--------------------------------- */
+        .box-18 {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto auto;
+            gap: 1px 1px;
+            padding: 2px;
+            border: 1px solid black;
+            background-color: aqua;
+        }
+
+        .d {
+            border: 1px solid black;
+        }
+        .r5{
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        /* --------------box-18 end--------------------------------- */
+        /* --------------box-23 start--------------------------------- */
+        .box-23 {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: auto auto auto;
+            gap: 1px 1px;
+            padding: 2px;
+            border: 1px solid black;
+            background-color: aqua;
+        }
+
+        .d {
+            border: 1px solid black;
+        }
+
+        /* --------------box-23 end--------------------------------- */
+         /* --------------box-24 start--------------------------------- */
+         .box-24 {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto auto;
+            gap: 1px 1px;
+            padding: 2px;
+            border: 1px solid black;
+            background-color: aqua;
+        }
+
+        .d {
+            border: 1px solid black;
+        }
+        .x5{
+            grid-row-start: 2;
+            grid-row-end: 6;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        /* --------------box-24 end--------------------------------- */
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="box box-1">
+            <div class="d a1">1</div>
+            <div class="d a2">2</div>
+            <div class="d a3">3</div>
+            <div class="d a4">4</div>
+            <div class="d a5">5</div>
+            <div class="d a6">6</div>
+        </div>
+        <div class="box box-2">
+            <div class="d b1">1</div>
+            <div class="d b2">2</div>
+            <div class="d b3">3</div>
+            <div class="d b4">4</div>
+            <div class="d b5">5</div>
+            <div class="d b6">6</div>
+        </div>
+        <div class="box box-3">
+            <div class="d c1">1</div>
+            <div class="d c2">2</div>
+            <div class="d c3">3</div>
+            <div class="d c4">4</div>
+            <div class="d c5">5</div>
+            <div class="d c6">6</div>
+        </div>
+        <div class="box box-4">
+            <div class="d d1">1</div>
+            <div class="d d2">2</div>
+            <div class="d d3">3</div>
+            <div class="d d4">4</div>
+            <div class="d d5">6</div>
+            <div class="d d6">7</div>
+            <div class="d d7">5</div>
+            <div class="d d8">8</div>
+            <div class="d d9">9</div>
+            <div class="d d10">10</div>
+            <div class="d d11">11</div>
+
+        </div>
+        <div class="box box-5">
+            <div class="d e1">1</div>
+            <div class="d e2">2</div>
+            <div class="d e3">3</div>
+            <div class="d e4">4</div>
+            <div class="d e5">5</div>
+            <div class="d e6">6</div>
+            <div class="d e7">7</div>
+            <div class="d e8">8</div>
+            <div class="d e9">9</div>
+            <div class="d e10">10</div>
+        </div>
+        <div class="box box-6">
+            <div class="d f1">1</div>
+            <div class="d f2">2</div>
+            <div class="d f3">3</div>
+            <div class="d f4">4</div>
+            <div class="d f5">5</div>
+            <div class="d f6">6</div>
+            <div class="d f7">7</div>
+        </div>
+        <div class="box box-7">
+            <div class="d g1">1</div>
+            <div class="d g2">2</div>
+            <div class="d g3">3</div>
+            <div class="d g4">4</div>
+            <div class="d g5">5</div>
+            <div class="d g6">6</div>
+        </div>
+        <div class="box box-8">
+            <div class="d h1">1</div>
+            <div class="d h2">2</div>
+            <div class="d h3">3</div>
+            <div class="d h4">4</div>
+            <div class="d h5">5</div>
+            <div class="d h6">6</div>
+        </div>
+        <div class="box box-9"></div>
+        <div class="box box-10"></div>
+        <div class="box box-11"></div>
+        <div class="box box-12">
+            <div class="d l1">1</div>
+            <div class="d l2">2</div>
+            <div class="d l3">3</div>
+            <div class="d l4">4</div>
+            <div class="d l5">5</div>
+            <div class="d l6">6</div>
+            <div class="d l7">7</div>
+        </div>
+        <div class="box box-13">
+            <div class="d m1">1</div>
+            <div class="d m2">2</div>
+            <div class="d m3">3</div>
+            <div class="d m4">4</div>
+            <div class="d m5">5</div>
+            <div class="d m6">6</div>
+        </div>
+        <div class="box box-14">
+            <div class="d n1">1</div>
+            <div class="d n2">2</div>
+            <div class="d n3">3</div>
+            <div class="d n4">4</div>
+            <div class="d n5">5</div>
+        </div>
+        <div class="box box-15">
+            <div class="d o1">1</div>
+            <div class="d o2">2</div>
+            <div class="d o3">3</div>
+            <div class="d o4">4</div>
+            <div class="d o5">5</div>
+        </div>
+        <div class="box box-16"></div>
+        <div class="box box-17"></div>
+        <div class="box box-18">
+            <div class="d r1">1</div>
+            <div class="d r2">2</div>
+            <div class="d r3">3</div>
+            <div class="d r4">4</div>
+            <div class="d r5">5</div>
+            <div class="d r6">6</div>
+            <div class="d r7">7</div>
+            <div class="d r8">8</div>
+            <div class="d r9">9</div>
+        </div>
+        <div class="box box-19"></div>
+        <div class="box box-20"></div>
+        <div class="box box-21"></div>
+        <div class="box box-22"></div>
+        <div class="box box-23">
+            <div class="d w1">1</div>
+            <div class="d w2">2</div>
+            <div class="d w3">3</div>
+            <div class="d w4">4</div>
+            <div class="d w5">5</div>
+            <div class="d w6">6</div>
+            <div class="d w7">7</div>
+            <div class="d w8">8</div>
+            <div class="d w9">9</div>
+            <div class="d w10">10</div>
+            <div class="d w11">11</div>
+            <div class="d w12">12</div>
+        </div>
+        <div class="box box-24">
+            <div class="d x1">1</div>
+            <div class="d x2">2</div>
+            <div class="d x3">3</div>
+            <div class="d x4">4</div>
+            <div class="d x5">5</div>
+            <div class="d x6">6</div>
+            <div class="d x7">7</div>
+            <div class="d x8">8</div>
+            <div class="d x9">9</div>
+        </div>
+    </section>
+</body>
+
+</html>
