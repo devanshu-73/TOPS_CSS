@@ -15,15 +15,14 @@
         }
 
         section {
-            border: 1px solid black;
             display: grid;
             gap: 15px 15px;
             grid-template-columns: auto auto auto auto auto auto;
-            grid-template-rows: auto auto auto auto;
+
         }
 
         .box {
-            padding: 75px;
+            padding: 60px;
             background-color: whitesmoke;
             border: 1px solid transparent;
         }
@@ -35,7 +34,6 @@
         .box-1 {
             display: grid;
             grid-template-columns: auto auto;
-            grid-template-rows: auto auto auto;
             gap: 1px 1px;
             padding: 2px;
             border: 1px solid black;
@@ -67,7 +65,6 @@
         .box-2 {
             display: grid;
             grid-template-columns: auto auto auto;
-            grid-template-rows: auto auto;
             gap: 1px 1px;
             padding: 2px;
             border: 1px solid black;
@@ -107,7 +104,6 @@
         .box-3 {
             display: grid;
             grid-template-columns: auto auto auto;
-            grid-template-rows: auto auto auto;
             gap: 1px 1px;
             padding: 2px;
             border: 1px solid black;
@@ -126,7 +122,6 @@
         .box-4 {
             display: grid;
             grid-template-columns: auto auto auto;
-            grid-template-rows: auto auto auto auto;
             gap: 1px 1px;
             padding: 2px;
             border: 1px solid black;
@@ -184,7 +179,6 @@
         .box-5 {
             display: grid;
             grid-template-columns: auto auto;
-            grid-template-rows: auto auto auto auto;
             gap: 1px 1px;
             padding: 2px;
             border: 1px solid black;
@@ -258,7 +252,6 @@
         .box-6 {
             display: grid;
             grid-template-columns: auto auto auto;
-            grid-template-rows: auto auto auto;
             gap: 1px 1px;
             padding: 2px;
             border: 1px solid black;
@@ -277,7 +270,6 @@
         .box-7 {
             display: grid;
             grid-template-columns: auto auto auto auto;
-            grid-template-rows: auto auto auto;
             gap: 1px 1px;
             padding: 2px;
             border: 1px solid black;
@@ -314,7 +306,6 @@
         .box-8 {
             display: grid;
             grid-template-columns: auto auto auto auto;
-            grid-template-rows: auto auto auto;
             gap: 1px 1px;
             padding: 2px;
             border: 1px solid black;
@@ -346,7 +337,6 @@
         .box-9 {
             display: grid;
             grid-template-columns: auto auto auto;
-            grid-template-rows: auto auto auto;
             gap: 1px 1px;
             padding: 2px;
             border: 1px solid black;
@@ -372,7 +362,6 @@
         .box-12 {
             display: grid;
             grid-template-columns: auto auto auto;
-            grid-template-rows: auto auto auto;
             gap: 1px 1px;
             padding: 2px;
             border: 1px solid black;
@@ -395,7 +384,6 @@
         .box-13 {
             display: grid;
             grid-template-columns: auto auto auto auto auto;
-            grid-template-rows: auto auto;
             gap: 1px 1px;
             padding: 2px;
             border: 1px solid black;
@@ -435,7 +423,6 @@
         .box-15 {
             display: grid;
             grid-template-columns: auto;
-            grid-template-rows: auto auto auto auto auto;
             gap: 1px 1px;
             padding: 2px;
             border: 1px solid black;
@@ -451,7 +438,6 @@
         .box-18 {
             display: grid;
             grid-template-columns: auto auto auto;
-            grid-template-rows: auto auto auto auto;
             gap: 1px 1px;
             padding: 2px;
             border: 1px solid black;
@@ -474,49 +460,54 @@
         .box-19 {
             display: grid;
             grid-template-columns: auto auto auto auto;
-            grid-template-rows: auto auto auto auto;
             gap: 1px 1px;
             padding: 2px;
             border: 1px solid black;
             background-color: aqua;
         }
-        .s1{
+
+        .s1 {
             grid-row-start: 1;
             grid-row-end: 3;
             grid-column-start: 1;
             grid-column-end: 5;
         }
-        .s2{
+
+        .s2 {
             grid-row-start: 3;
             grid-row-end: 5;
             grid-column-start: 1;
             grid-column-end: 5;
         }
-        .s3{
+
+        .s3 {
             grid-row-start: 5;
             grid-row-end: 7;
             grid-column-start: 1;
         }
-        .s4{
+
+        .s4 {
             grid-row-start: 5;
             grid-row-end: 6;
             grid-column-start: 2;
         }
-        .s5{
+
+        .s5 {
             grid-row-start: 6;
             grid-column-start: 2;
         }
-        .s6{
+
+        .s6 {
             grid-row-start: 5;
             grid-row-end: 7;
             grid-column-start: 3;
         }
+
         /* --------------box-19 end--------------------------------- */
         /* --------------box-20 start--------------------------------- */
         .box-20 {
             display: grid;
             grid-template-columns: auto auto auto;
-            grid-template-rows: auto auto auto auto;
             gap: 1px 1px;
             padding: 2px;
             border: 1px solid black;
@@ -555,42 +546,58 @@
         /* --------------box-21 start--------------------------------- */
         .box-21 {
             display: grid;
-            grid-template-columns: auto auto auto;
-            grid-template-rows: auto auto auto;
             gap: 1px 1px;
             padding: 2px;
             border: 1px solid black;
             background-color: aqua;
+            grid-template-columns: auto auto auto;
         }
-        .u2{
-            grid-row-start: 1;
-            grid-row-end: 3;
-            grid-column-start: 2;
-        
 
-    
+        .u1 {
+            grid-column: 1/2;
+            grid-row: 1/3;
         }
-        .u5{
-            grid-row-start: 3;
-            grid-row-end: 5;
-            grid-column-start: 2;
-            
+
+        .u2 {
+            grid-column: 2/3;
+            grid-row: 1/4;
         }
-        .u7{
-            grid-row-start: 3;
-            grid-row-end: 5;
+
+        .u3 {
+            grid-column: 3/4;
+            grid-row: 1/3;
         }
-        .u8{
-            grid-column-start: 3;
-            grid-row-start: 3;
-            grid-row-end: 5;
+
+        .u4 {
+            grid-column: 1/2;
+            grid-row: 3/5;
         }
+
+        .u5 {
+            grid-column: 2/3;
+            grid-row: 4/7;
+        }
+
+        .u6 {
+            grid-column: 3/4;
+            grid-row: 3/5;
+        }
+
+        .u7 {
+            grid-column: 1/2;
+            grid-row: 5/7;
+        }
+
+        .u8 {
+            grid-column: 3/4;
+            grid-row: 5/7;
+        }
+
         /* --------------box-21 end--------------------------------- */
         /* --------------box-22 start--------------------------------- */
         .box-22 {
             display: grid;
             grid-template-columns: auto auto auto auto auto;
-            grid-template-rows: auto auto auto auto auto;
             gap: 1px 1px;
             padding: 2px;
             border: 1px solid black;
@@ -670,7 +677,6 @@
         .box-23 {
             display: grid;
             grid-template-columns: auto auto auto auto;
-            grid-template-rows: auto auto auto;
             gap: 1px 1px;
             padding: 2px;
             border: 1px solid black;
@@ -682,7 +688,6 @@
         .box-24 {
             display: grid;
             grid-template-columns: auto auto auto;
-            grid-template-rows: auto auto auto auto;
             gap: 1px 1px;
             padding: 2px;
             border: 1px solid black;
