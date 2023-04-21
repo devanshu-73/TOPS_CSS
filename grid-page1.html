@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section {
+            display: grid;
+            border: 1px solid black;
+            grid-template-columns: repeat(4, auto);
+            gap: 10px 10px;
+            padding: 10px;
+        }
+
+        .nav {
+            border-radius: 10px;
+            padding: 15px 50px;
+            border: 1px solid green;
+        }
+
+        .side {
+            padding: 90px 0px;
+            border: 1px solid blue;
+        }
+
+        .footer {
+            padding: 50px 0px;
+            border: 1px solid red;
+        }
+
+        .box-5 {
+            border: 1px solid black;
+            grid-column: 1/4;
+            grid-row: 2/4;
+            padding: 180px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="nav box-1">1</div>
+        <div class="nav box-2">2</div>
+        <div class="nav box-3">3</div>
+        <div class="nav box-4">4</div>
+        <div class="box-5">5</div>
+        <div class="side box-6">6</div>
+        <div class="side box-7">7</div>
+        <div class="footer box-8">8</div>
+        <div class="footer box-9">9</div>
+        <div class="footer box-10">10</div>
+        <div class="footer box-11">11</div>
+    </section>
+</body>
+
+</html>
